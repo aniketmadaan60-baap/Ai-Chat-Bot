@@ -7,12 +7,12 @@ import Markdown from 'react-markdown';
 import { RiComputerFill } from 'react-icons/ri';
 import { GiOpenBook, GiWhiteBook } from 'react-icons/gi';
 import { FaBloggerB } from 'react-icons/fa6';
-// AIzaSyBfo3UKppd9jKLje8SqnTGwiO1xNbi8qd0
+
 function App() {
   const[screen, setScreen] = useState(1);
   const[prompt, setPrompt] = useState("")
   const [loading, setLoading]  = useState(false)
-  const ai = new GoogleGenAI({apiKey : "AIzaSyB7sMzutnmkDRiwTC9f6EZFxG7d5hK4PyU"});
+  const ai = new GoogleGenAI({apiKey : API_KEY});
   let Card1 = "Create a site using html css and js"
   let Card2 = "Write a book for me. Topic is coding."
   let Card3 = "Tell me a comedy Story."
