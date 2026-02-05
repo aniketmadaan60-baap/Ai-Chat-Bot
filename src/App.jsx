@@ -12,7 +12,7 @@ function App() {
   const[screen, setScreen] = useState(1);
   const[prompt, setPrompt] = useState("")
   const [loading, setLoading]  = useState(false)
-  const ai = new GoogleGenAI({apiKey : API_KEY});
+  const ai = new GoogleGenAI({apiKey : import.meta.env.VITE_GOOGLE_AI_API_KEY});
   let Card1 = "Create a site using html css and js"
   let Card2 = "Write a book for me. Topic is coding."
   let Card3 = "Tell me a comedy Story."
